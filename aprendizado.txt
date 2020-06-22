@@ -1,0 +1,13 @@
+Extensão visual studio code - Vetur por Pine Wu
+
+filters é utilizado no html por exemplo
+            <span class="produto_preco"> {{produto.preco | numeroPreco}}</span>
+essa | é utilizada para usar o produto.preco no filtro,
+É como se fosse um method...
+
+  filters: {
+    numeroPreco(valor) {
+      console.log(valor);
+      return 1;
+    },
+Todos os locais do {{produto.preco |numeroPreco}} vira 1
